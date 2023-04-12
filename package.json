@@ -1,0 +1,21 @@
+{
+  "name": "@weedoit/easyenum",
+  "version": "1.0.1",
+  "description": "A utility function for creating enum-like structures in TypeScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "author": "brunoziie",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.4",
+    "@babel/preset-typescript": "^7.21.4",
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.4"
+  }
+}
