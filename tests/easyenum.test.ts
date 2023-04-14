@@ -1,8 +1,8 @@
-import { SuperEnum } from '../src/index';
+import { EasyEnum } from '../src/index';
 
-describe('SuperEnum', () => {
+describe('EasyEnum', () => {
   test('returns an object with enum-like properties', () => {
-    const MyEnum = SuperEnum('FOO', 'BAR', 'BAZ');
+    const MyEnum = EasyEnum('FOO', 'BAR', 'BAZ');
 
     expect(MyEnum).toEqual({
       FOO: 'FOO',
@@ -12,7 +12,7 @@ describe('SuperEnum', () => {
   });
 
   test('enum properties have correct type', () => {
-    const MyEnum = SuperEnum('FOO', 'BAR', 'BAZ');
+    const MyEnum = EasyEnum('FOO', 'BAR', 'BAZ');
     type MyEnumType = keyof typeof MyEnum;
     const myVar: MyEnumType = 'FOO';
     expect(myVar).toBe('FOO');
