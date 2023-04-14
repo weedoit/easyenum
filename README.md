@@ -20,7 +20,7 @@ import { EasyEnum } from '@weedoit/easyenum';
 const UserRole = EasyEnum('ADMIN', 'CLIENT', 'SYSTEM');
 ```
 
-This will return an object with properties that correspond to the string values passed to SuperEnum. The properties are set to the same value as their name.
+This will return an object with properties that correspond to the string values passed to EasyEnum. The properties are set to the same value as their name.
 
 You can use the resulting object like an enum:
 
@@ -32,7 +32,7 @@ function doSomething(value: keyof typeof UserRole) {
 doSomething(UserRole.ADMIN);
 ```
 
-Note that the properties of the object returned by EasyEnum are of type keyof typeof MyEnum, which is a union of the string literal types that correspond to the keys of the object. This ensures that you can only pass valid enum values to functions that accept them.
+Note that the properties of the object returned by EasyEnum are of type keyof typeof UserRole, which is a union of the string literal types that correspond to the keys of the object. This ensures that you can only pass valid enum values to functions that accept them.
 
 License
-@weedoit/superenum is licensed under the MIT License. See the LICENSE file for details.
+@weedoit/easyenum is licensed under the MIT License. See the LICENSE file for details.
